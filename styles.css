@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+body.dark-theme {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+}
+
+.dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  flex: 1 1 280px;
+}
+
+body.dark-theme .card {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 0.9rem;
+}
+
+#task-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #f8f9fa;
+  border-left: 5px solid #6c757d;
+  border-radius: 4px;
+}
+
+body.dark-theme .task-item {
+  background-color: #374151;
+}
+
+.task-item.priority-High {
+  border-left-color: #dc3545;
+}
+
+.task-item.priority-Medium {
+  border-left-color: #ffc107;
+}
+
+.task-item.priority-Low {
+  border-left-color: #28a745;
+}
